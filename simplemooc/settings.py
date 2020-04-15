@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core',
     'courses',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -139,3 +140,8 @@ DEFAULT_FORM_EMAIL = 'Nome <testee@gmail.com>'
 # EMAIL_PORT = 587
 
 CONTACT_EMAIL = 'abraao.n.duarte@gmail.com'
+
+# Authentication
+LOGIN_URL = 'accounts:login'
+LOGIN_REDIRECT_URL = 'core:home'
+LOGOUT_URL = 'accounts:logout'
