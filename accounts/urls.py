@@ -10,4 +10,5 @@ urlpatterns = [
     path('sair/', LogoutView.as_view(next_page='core:home'), name='logout'),
     path('cadastre-se/', views.register, name='register'),
     path('editar/', views.edit, name='edit'),
+    path('editar-senha/', views.edit_password, name='edit_password'),
 ]
